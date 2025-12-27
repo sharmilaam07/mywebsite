@@ -1,0 +1,188 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Georgia', serif;
+}
+
+body{
+  background:#eef2ea;
+  color:#444;
+}
+
+/* HEADER */
+.header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px;
+  background:#fff;
+}
+
+.logo h1{
+  font-size:22px;
+}
+.logo p{
+  font-size:12px;
+}
+
+.nav{
+  display:flex;
+  gap:20px;
+}
+.nav a{
+  text-decoration:none;
+  color:#555;
+}
+
+.menu-icon{
+  display:none;
+  font-size:26px;
+}
+
+#menu-toggle{
+  display:none;
+}
+
+/* HERO */
+.hero{
+  background:url("https://images.unsplash.com/photo-1506784983877-45594efa4cbe") center/cover no-repeat;
+  padding:80px 20px;
+}
+
+.hero-box{
+  background:#f7f4ed;
+  padding:25px;
+  max-width:500px;
+}
+
+.hero-box button{
+  margin-top:15px;
+}
+
+/* CATEGORIES */
+.categories{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:10px;
+  padding:20px;
+}
+
+.cat{
+  background:#cfd8c3;
+  padding:40px;
+  text-align:center;
+}
+
+/* PLANNER */
+.planner{
+  background:#f0cfa8;
+  padding:40px 20px;
+  text-align:center;
+}
+
+.planner form{
+  max-width:400px;
+  margin:auto;
+}
+
+.planner input, .planner button{
+  width:100%;
+  padding:12px;
+  margin:8px 0;
+}
+
+/* CONTENT */
+.content{
+  display:flex;
+  flex-wrap:wrap;
+  padding:30px;
+  gap:20px;
+}
+
+.content img{
+  width:100%;
+  max-width:400px;
+}
+
+.text{
+  max-width:400px;
+}
+
+.reverse{
+  flex-direction:row-reverse;
+}
+
+/* POPULAR */
+.popular{
+  background:#9fa98e;
+  padding:40px 20px;
+  text-align:center;
+}
+
+.popular-box{
+  display:flex;
+  gap:20px;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+.post{
+  background:#f7f4ed;
+  padding:20px;
+  width:200px;
+}
+
+/* FOOTER FORM */
+.footer-form{
+  background:#f0cfa8;
+  padding:40px 20px;
+  text-align:center;
+}
+
+.footer-form input, .footer-form button{
+  width:100%;
+  max-width:350px;
+  padding:12px;
+  margin:8px auto;
+  display:block;
+}
+
+/* BUTTON */
+button{
+  background:#7f8b6a;
+  color:#fff;
+  border:none;
+  cursor:pointer;
+  padding:10px 20px;
+}
+
+/* MOBILE */
+@media(max-width:600px){
+  .nav{
+    display:none;
+    flex-direction:column;
+    background:#fff;
+    position:absolute;
+    top:60px;
+    right:0;
+    width:200px;
+  }
+
+  #menu-toggle:checked + .menu-icon + .nav{
+    display:flex;
+  }
+
+  .menu-icon{
+    display:block;
+  }
+
+  .categories{
+    grid-template-columns:1fr;
+  }
+
+  .content{
+    flex-direction:column;
+    align-items:center;
+  }
+}

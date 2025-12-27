@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nature Blog</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="logo">
+    <h1>Nature Soul</h1>
+    <p>Travel · Life · Wellness</p>
+  </div>
+
+  <input type="checkbox" id="menu-toggle">
+  <label for="menu-toggle" class="menu-icon">☰</label>
+
+  <nav class="nav">
+    <a href="#home">Home</a>
+    <a href="#about">About Me</a>
+    <a href="#shop">Shop</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-box">
+    <h2>Welcome to My Peaceful Space</h2>
+    <p>
+      I share simple living ideas, mindful travel tips, and wellness habits
+      that help you slow down and enjoy life naturally.
+    </p>
+    <button>Read More</button>
+  </div>
+</section>
+
+<!-- CATEGORY -->
+<section class="categories">
+  <div class="cat">Travel</div>
+  <div class="cat">Lifestyle</div>
+  <div class="cat">Home</div>
+</section>
+
+<!-- PLANNER FORM -->
+<section class="planner">
+  <h2>Download My Monthly Planner</h2>
+  <p>Sign up to receive this printable for free</p>
+
+  <form onsubmit="showPopup(event)">
+    <input type="text" placeholder="Full Name" required>
+    <input type="email" placeholder="Email Address" required>
+    <button type="submit">Subscribe</button>
+  </form>
+</section>
+
+<!-- CONTENT SECTION -->
+<section class="content" id="about">
+  <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6" alt="">
+  <div class="text">
+    <h3>Mindful Living</h3>
+    <p>
+      Mindful living means being present in everyday moments.
+      Simple habits like journaling, walking in nature, and digital detox
+      can improve mental clarity and peace.
+    </p>
+    <button>Read More</button>
+  </div>
+</section>
+
+<section class="content reverse">
+  <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="">
+  <div class="text">
+    <h3>Nature & You</h3>
+    <p>
+      Spending time outdoors reduces stress and boosts creativity.
+      Even small plants at home can improve mood and productivity.
+    </p>
+    <button>Read More</button>
+  </div>
+</section>
+
+<!-- POPULAR POSTS -->
+<section class="popular" id="shop">
+  <h2>Popular Posts</h2>
+  <div class="popular-box">
+    <div class="post">
+      <h4>Slow Morning Routine</h4>
+      <button>Read More</button>
+    </div>
+    <div class="post">
+      <h4>Journaling for Peace</h4>
+      <button>Read More</button>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER FORM -->
+<section class="footer-form" id="contact">
+  <h2>Get The Latest</h2>
+  <form onsubmit="showPopup(event)">
+    <input type="text" placeholder="Full Name" required>
+    <input type="email" placeholder="Email Address" required>
+    <button type="submit">Subscribe</button>
+  </form>
+</section>
+
+<script>
+function showPopup(e){
+  e.preventDefault();
+  alert("🎉 You are successfully registered!");
+}
+</script>
+
+</body>
+</html>
