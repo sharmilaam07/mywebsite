@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Nature Blog</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lora:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -12,7 +13,7 @@
 <header class="header">
   <div class="logo">
     <h1>Nature Soul</h1>
-    <p>Travel · Life · Wellness</p>
+    <p><i>Travel · Life · Wellness</i></p>
   </div>
 
   <input type="checkbox" id="menu-toggle">
@@ -40,15 +41,15 @@
 
 <!-- CATEGORY -->
 <section class="categories">
-  <div class="cat">Travel</div>
-  <div class="cat">Lifestyle</div>
-  <div class="cat">Home</div>
+  <div class="cat"><i>Travel</i></div>
+  <div class="cat"><i>Lifestyle</i></div>
+  <div class="cat"><i>Home</i></div>
 </section>
 
 <!-- PLANNER FORM -->
 <section class="planner">
-  <h2>Download My Monthly Planner</h2>
-  <p>Sign up to receive this printable for free</p>
+  <h2><i>Download My Monthly Planner</i></h2>
+  <p><i>Sign up to receive this printable for free</i></p>
 
   <form onsubmit="showPopup(event)">
     <input type="text" placeholder="Full Name" required>
@@ -61,7 +62,7 @@
 <section class="content" id="about">
   <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6" alt="">
   <div class="text">
-    <h3>Mindful Living</h3>
+    <h3><i>Mindful Living</i></h3>
     <p>
       Mindful living means being present in everyday moments.
       Simple habits like journaling, walking in nature, and digital detox
@@ -74,7 +75,7 @@
 <section class="content reverse">
   <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="">
   <div class="text">
-    <h3>Nature & You</h3>
+    <h3><i>Nature & You</i></h3>
     <p>
       Spending time outdoors reduces stress and boosts creativity.
       Even small plants at home can improve mood and productivity.
@@ -85,7 +86,7 @@
 
 <!-- POPULAR POSTS -->
 <section class="popular" id="shop">
-  <h2>Popular Posts</h2>
+  <h2><i>Popular Posts</i></h2>
   <div class="popular-box">
     <div class="post">
       <h4>Slow Morning Routine</h4>
@@ -107,6 +108,10 @@
     <button type="submit">Subscribe</button>
   </form>
 </section>
+
+<footer>
+  © 2025 Amber Smith · Lifestyle Blog
+</footer>
 
 <script>
 function showPopup(e){

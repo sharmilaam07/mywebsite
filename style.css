@@ -2,12 +2,19 @@
   margin:0;
   padding:0;
   box-sizing:border-box;
-  font-family: 'Georgia', serif;
+  
 }
-
 body{
   background:#eef2ea;
   color:#444;
+  font-family: 'Lora', serif;
+  font-size:15px;
+  line-height:1.7;
+}
+body{
+  background:#eef2ea;
+  color:#444;
+  font-family: 'lora',serif;
 }
 
 /* HEADER */
@@ -19,8 +26,51 @@ body{
   background:#fff;
 }
 
+
+
+h1,h2,h3,h4 {
+  font-family: 'Playfair Display',serif;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+
+
+}
+.logo h1{
+  font-family: 'Playfair Display',serif;
+  font-weight: 700;
+  font-size: 28px;
+  color: #8c957c;
+  
+}
+.logo p{
+  font-family: 'Playfair Display',serif;
+  font-size:13px;
+  font-style: italic;
+  color:#9aa08c;
+}
+nav a,
+button,
+.cat,
+.planner p{
+  font-family: 'Playfair Display',serif;
+  letter-spacing:1px;
+}
+.nav a{
+  text-decoration:none;
+  color:#555;
+  font-size:13px;
+  text-transform:uppercase;
+}
+.hero-box h2{
+  font-family: 'Playfair Display',serif;
+  font-weight:700;
+  font-style: italic;
+  color: #8c957c;
+}
+
 .logo h1{
   font-size:22px;
+  font-family: 'Playfair Display',serif;
 }
 .logo p{
   font-size:12px;
@@ -80,6 +130,11 @@ body{
   padding:40px 20px;
   text-align:center;
 }
+.planner h2{
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 500;
+}
 
 .planner form{
   max-width:400px;
@@ -99,7 +154,16 @@ body{
   padding:30px;
   gap:20px;
 }
-
+.content h3{
+   font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 500;
+}
+.contentreverse{
+   font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 500;
+}
 .content img{
   width:100%;
   max-width:400px;
@@ -126,6 +190,12 @@ body{
   justify-content:center;
   flex-wrap:wrap;
 }
+.popular h2,h4{
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 500;
+}
+}
 
 .post{
   background:#f7f4ed;
@@ -146,6 +216,18 @@ body{
   padding:12px;
   margin:8px auto;
   display:block;
+}
+.footer-form h2{
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 500;
+}
+footer {
+  background: var(--sage);
+  color: var(--white);
+  text-align: center;
+  padding: 25px;
+  font-size: 13px;
 }
 
 /* BUTTON */
@@ -185,4 +267,5 @@ button{
     flex-direction:column;
     align-items:center;
   }
+
 }
